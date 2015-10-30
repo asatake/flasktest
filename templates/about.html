@@ -1,0 +1,49 @@
+{% extends "layout.html"%}
+
+{% block content %}
+    <h1>このサイトについて</h1>
+
+    <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+        <li><a href="#distribute" data-toggle="tab">概要</a></li>
+        <li><a href="#profile" data-toggle="tab">管理者について</a></li>
+        <li><a href="#agreement" data-toggle="tab">利用規約</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="distribute">
+            <h3><span class="mdi-content-content-paste"></span> 概要</h3>
+
+            <p>このサイトは、音楽素材を中心とした制作物の配布サイトです。</p>
+
+            <p>配布物は基本的に無料でお使いいただけます。</p>
+        </div>
+
+        <div class="tab-pane fade" id="profile">
+            <h3><span class="mdi-action-assignment-ind"></span> 管理者について</h3>
+            <h4><span class="mdi-social-group"></span> 名前</h4>
+            <p style="font-size: larger">浅井 茸人 (あさい たけと)</p>
+            <br>
+            <h4><span class="mdi-social-cake"></span> 誕生日</h4>
+            <p>1994/02/11 ({{ howold }}歳)</p>
+            <br>
+            <h4><span class="mdi-communication-email"> 連絡先</span></h4>
+            <p>mgn.mush.music$gmail.com ($ -> @)</p>
+
+        </div>
+
+        <div class="tab-pane fade" id="agreement">
+            <h3><span class="mdi-alert-warning"></span> 利用規約</h3>
+
+            <p><b>著作権は一切放棄しておりません。</b></p>
+
+            <p>当サイトで公開されている楽曲著作権は作者に帰属します。</p>
+            <ul>
+                <li><p>公開作品の二次配布はおやめください。</p></li>
+                <li><p>ループ処理など、作品を壊さない程度の編集は構いません。</p></li>
+                <li><p>利用報告・名前の記載は任意です。</p></li>
+                <li><p>商用利用の場合はメールにてお知らせください。</p></li>
+            </ul>
+            <p>その他何かございましたらメールにてお知らせください。感想メールも大歓迎です。</p>
+
+        </div>
+    </div>
+{% endblock %}

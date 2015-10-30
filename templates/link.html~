@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>リンク</h1>
+    <br>
+    <p>Twitter: <a href="https://twitter.com/Mush_asatake">@Mush_asatake</a><br></p>
+    <p>Audio Stock: <a href="http://audiostock.jp/account/16">Link</a><br></p>
+    <p>Sound Cloud: <a href="https://soundcloud.com/mush_asatake">Link</a></p>
+    <p>Hatena Bookmark: <a href="http://asataken.hatenablog.com/">Link</a></p>
+{% endblock %}
